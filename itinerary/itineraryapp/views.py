@@ -3,4 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return HttpResponse("Hello, world. You're at the itineraryapp home.")
+    # Do something here
+    
+    return render(request, 'home.html')
