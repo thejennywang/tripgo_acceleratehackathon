@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'itineraryapp',
+    'mongonaut',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -61,11 +62,13 @@ WSGI_APPLICATION = 'itinerary.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': '',
-    },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
 }
 
-SESSION_ENGINE ='mongoengine.django.sessions'
+#SESSION_ENGINE ='mongoengine.django.sessions'
+SESSION_ENGINE ='django.contrib.sessions.backends.file'
 
 #mongodb://<dbuser>:<dbpassword>@ds033601.mongolab.com:33601/itinerary
 
