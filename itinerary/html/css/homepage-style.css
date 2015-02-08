@@ -118,6 +118,10 @@ body{
 	color: #000;
 }
 
+input[type=date] {
+	font-size: 10px;
+	}
+
 .tagline .button {
 	background-color: #ff6f28;
 	border-color: #ff6f28;
