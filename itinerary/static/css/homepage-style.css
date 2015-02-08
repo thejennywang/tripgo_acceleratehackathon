@@ -82,7 +82,9 @@ float: none;
 }
 
 .tagline h1{
-	font-size: 3.2em;
+	font-size: 3.4em;
+	-webkit-text-shadow: 1px 1px 3px rgba(100,100,100,0.6);
+	text-shadow: 1px 1px 3px rgba(100,100,100,0.6);
 }
 
 .tagline h2{
