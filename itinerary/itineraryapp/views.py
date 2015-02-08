@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from itineraryapp.models import City, ThingsToDo
 import itinerary
+from time import strptime, mktime
+import datetime
+from _datetime import timedelta
 
 # Create your views here.
 def home(request):
@@ -11,18 +14,19 @@ def home(request):
     return render(request, 'home.html')
 
 def get_itinerary(request):
-#     start = request.POST.get('start-date','')
-#     end = request.POST.get('end-date','')
-#     location = request.POST.get('location','')
-#     characteristic = 'adventure'
-#    
-#     duration = end - start
-#     days_duration = duration.days
-    
-    location = "West Coast_USA"
+    start = request.GET.get('start-date','')
+    end = request.GET.get('end-date','')
    
-    days_duration = 14
+#     duration = 14
+#     if(start == "2015-02-20"):
+#         duration = 7
 
+    start_time = strptime(start, "%Y-%m-%d")
+    end_time = strptime(end, "%Y-%m-%d")
+    
+    duration = (mktime(end_time) - mktime(start_time)) / (3600*24)
+    
+    print("duration :" + str(duration)) 
 #     adventure_cities = City.objects(region=location, characteristics="adventure").order_by('-ranking')
 #  
 #     for city in adventure_cities:
@@ -62,7 +66,7 @@ def get_itinerary(request):
     adventure_cities = [sf, big_sur, la, lv, gc]
     relax_cities = [sb, sm, sd]
     
-    if(days_duration == 7):
+    if(duration == 7):
         sf.duration = 3
         big_sur.duration = 1
         la.duration = 3
@@ -74,6 +78,6 @@ def get_itinerary(request):
     
     #sort by duration and ranking, then suggest places keeping duration limit 
     itinerary_list = [adventure_cities, relax_cities]
-    context = {'itinerary_list': itinerary_list, 'duration': days_duration}
+    context = {'itinerary_list': itinerary_list, 'duration': duration}
 
     return render(request, 'mytrip.html', context)
