@@ -61,8 +61,11 @@ a:hover {
   padding-left: 20px;
   padding-right: 20px;
 }
+.header .location .input-full {
+  width: 200px;
+}
 .header .date .input-full {
-  width: 300px;
+  width: 260px;
 }
 .header .input-full {
   color: #3a3d3f;
@@ -105,7 +108,7 @@ a:hover {
 /*-- BG --*/
 .bg {
   background: url(../img/itinerary_header.png) center top no-repeat;
-  margin-bottom: 15px;
+  margin-bottom: 65px;
 }
 /*-- HEADING --*/
 .heading {
@@ -143,7 +146,7 @@ a:hover {
 /*-- FEATURES --*/
 .features {
   position: relative;
-  top: 5px;
+  top: 55px;
   padding: 1px 0;
   background-color: white;
   border-radius: 5px;
@@ -179,6 +182,7 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
   position: relative;
+  /*background-color: #ffeee6;*/
 }
 .features li.active a:after,
 .features a:focus:after {
