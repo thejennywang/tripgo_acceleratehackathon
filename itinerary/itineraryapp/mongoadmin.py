@@ -4,17 +4,17 @@ from mongonaut.sites import MongoAdmin
 # Import your custom models
 from itineraryapp.models import City, ThingsToDo
 
-# Subclass MongoAdmin and add a customization
+# # Subclass MongoAdmin and add a customization
 class CityAdmin(MongoAdmin):
-    search_fields = ('name',)
-    
-    # provide following fields for view in the DocumentListView
-    list_fields = ('name', "description")
-
+    search_fields = ('title',)
+#     
+#     # provide following fields for view in the DocumentListView
+    list_fields = ('title', )
+ 
 class ThingsToDoAdmin(MongoAdmin):
-    search_fields = ('name',)
-    
-    list_fields = ('name', )
+    search_fields = ('title',)
+     
+    list_fields = ('title', )
     
 
 # Instantiate the MongoAdmin class

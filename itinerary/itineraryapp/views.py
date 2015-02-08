@@ -11,3 +11,21 @@ def home(request):
     new_city.save()
 
     return render(request, 'home.html')
+
+def getitinerary(request):
+    start = request.POST.get('start-date','')
+    end = request.POST.get('end-date','')
+    location = request.POST.get('location','')
+    characteristic = 'adventure'
+   
+    duration = end - start
+    days_duration = duration.days
+    
+    relevant_cities = City.objects(region=location, characteristic = characteristic).sort('-ranking','-stay_duration')
+
+    #sort by duration and ranking, then suggest places keeping duration limit 
+    result_city_list = relevant_cities
+    
+    context = {'city_list': result_city_list, 'duration': days_duration}
+
+    return render(request, 'mytrip.html', context)
