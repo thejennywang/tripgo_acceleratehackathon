@@ -164,7 +164,8 @@ a:hover {
   display: inline-block;
   width: 16%;
 }
-.features a {
+.features a,
+.features span {
   display: inline-block;
   background-position: center 15px;
   padding-top: 40px;
@@ -199,7 +200,8 @@ a:hover {
   border-width: 20px;
   margin-left: -20px;
 }
-.features li:nth-child(1) a {
+.features li:nth-child(1) a,
+.features li:nth-child(1) span {
   background-image: url(../img/icons/icon_adventure.png);
 }
 .features li:nth-child(1) a:hover,
@@ -207,7 +209,8 @@ a:hover {
 .features li:nth-child(1).active a {
   background-image: url(../img/icons/icon_adventure_active.png);
 }
-.features li:nth-child(2) a {
+.features li:nth-child(2) a,
+.features li:nth-child(2) span {
   background-image: url(../img/icons/icon_relax.png);
 }
 .features li:nth-child(2) a:hover,
@@ -215,7 +218,8 @@ a:hover {
 .features li:nth-child(2).active a {
   background-image: url(../img/icons/icon_relax_active.png);
 }
-.features li:nth-child(3) a {
+.features li:nth-child(3) a,
+.features li:nth-child(3) span {
   background-image: url(../img/icons/icon_family.png);
 }
 .features li:nth-child(3) a:hover,
@@ -223,7 +227,8 @@ a:hover {
 .features li:nth-child(3).active a {
   background-image: url(../img/icons/icon_family_active.png);
 }
-.features li:nth-child(4) a {
+.features li:nth-child(4) a,
+.features li:nth-child(4) span {
   background-image: url(../img/icons/icon_romantic.png);
 }
 .features li:nth-child(4) a:hover,
@@ -231,7 +236,8 @@ a:hover {
 .features li:nth-child(4).active a {
   background-image: url(../img/icons/icon_romantic_active.png);
 }
-.features li:nth-child(5) a {
+.features li:nth-child(5) a,
+.features li:nth-child(5) span {
   background-image: url(../img/icons/icon_discovery.png);
 }
 .features li:nth-child(5) a:hover,
@@ -239,7 +245,8 @@ a:hover {
 .features li:nth-child(5).active a {
   background-image: url(../img/icons/icon_discovery_active.png);
 }
-.features li:nth-child(6) a {
+.features li:nth-child(6) a,
+.features li:nth-child(6) span {
   background-image: url(../img/icons/icon_luxury.png);
 }
 .features li:nth-child(6) a:hover,
@@ -488,7 +495,7 @@ a:hover {
   font-weight: 600;
 }
 .day .dl-horizontal dd {
-  margin-left: 80px;
+  margin-left: 0;
   color: #b1b1b2;
 }
 /*-- FOOTER --*/
