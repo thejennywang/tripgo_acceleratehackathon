@@ -44,9 +44,12 @@ float: none;
 	border-bottom: 3px solid transparent;
 }
 
-#navbar a:hover {
+#navbar a:hover,
+#navbar a:focus,
+#navbar a:active {
 	text-decoration: none;
 	border-bottom: 3px solid #fff;
+	background: none;
 }
 
 #navbar .profile a {
@@ -79,7 +82,9 @@ float: none;
 }
 
 .tagline h1{
-	font-size: 3.2em;
+	font-size: 3.4em;
+	-webkit-text-shadow: 1px 1px 3px rgba(100,100,100,0.6);
+	text-shadow: 1px 1px 3px rgba(100,100,100,0.6);
 }
 
 .tagline h2{
@@ -106,6 +111,7 @@ float: none;
 
 #location {
 	width: 225px;
+	border-radius: 2px 0 0 2px;
 }
 
 #start-date,
@@ -123,10 +129,27 @@ float: none;
 	color: #000;
 }
 
+.tagline .input-text:focus,
+.tagline .button:focus {
+	outline: 0;
+	background-color: #f5f5f5;
+}
+
 .tagline .button {
 	background-color: #ff6f28;
 	border-color: #ff6f28;
 	color: #fff;
+	border-radius: 0 2px 2px 0;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.tagline .button:hover {
+	background-color: #ef5a11;
+	border-color: #ef5a11;
 }
 
 .trips {
@@ -244,3 +267,5 @@ footer .visa{
 	background-position: center top;
 	padding-top: 50px;
 }
+}
+
