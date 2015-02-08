@@ -7,4 +7,7 @@ urlpatterns = patterns('',
     url(r'^home.html$', itineraryapp.views.home, name='home'),
     url(r'^mongonaut/', include('mongonaut.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    
+    
+    start = request.POST['start-date']
 )
