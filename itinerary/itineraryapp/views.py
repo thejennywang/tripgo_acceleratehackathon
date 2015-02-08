@@ -19,25 +19,24 @@ def get_itinerary(request):
 #     days_duration = duration.days
     
     location = "West Coast_USA"
-    characteristic = 'adventure'
    
     days_duration = 14
 
-    relevant_cities = City.objects(region=location, characteristics=characteristic)
-    relevant_cities = relevant_cities.order_by('-ranking')
+    adventure_cities = City.objects(region=location, characteristics="adventure").order_by('-ranking')
+    relax_cities = City.objects(region=location, characteristics="relax").order_by('-ranking')
 
     for city in relevant_cities:
         print(city.title + " " + str(city.characteristics))
 
-    if(days_duration == 14 and characteristic == 'adventure'):
+    if(days_duration == 14):
         #we do something here
         print("case 1")
+        sf = City.objects(title="San Francisco")
+        big_sur = City.objects(title="Big Sur")
+        la = City.objects(title="Los Angeles")
+        lv = City.objects(title="Las Vegas")
     
-    if(days_duration == 14 and characteristic == 'relax'):
-        #we do something here
-        print("case 2")
-    
-    if(days_duration == 7 and characteristic == 'adventure'):
+    if(days_duration == 7):
         #we do something here
         print("case 3")
     
@@ -46,6 +45,6 @@ def get_itinerary(request):
     #sort by duration and ranking, then suggest places keeping duration limit 
     result_city_list = relevant_cities
     
-    context = {'city_list': result_city_list, 'duration': days_duration}
+    context = {'itinerary_list': result_itinerary_list, 'duration': days_duration}
 
     return render(request, 'mytrip.html', context)
