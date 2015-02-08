@@ -1,1 +1,1190 @@
-to be filled.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TripGo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/bootstrap.css">
+  <link rel="stylesheet" href="/static/css/animate.css">
+  <link rel="stylesheet" href="/static/css/itineraries-style.css">
+  <script src="/static/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script src="/static/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/static/js/wow.min.js"></script>
+</head>
+<body>
+  <section class="header">
+    <div class="logo">
+      <a href=""><img src="/static/img/logo.png" alt=""></a>
+    </div>
+    <!-- /.logo -->
+    <div class="location">
+      <span>WHERE</span>
+      <input type="text" class="input-full" value="West Coast, US">
+    </div>
+    <!-- /.location -->
+    <div class="date">
+      <span>DATE</span>
+      <input type="text" class="input-full" value="08.12.2015 - 08.27.2015">
+    </div>
+    <!-- /.date -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">My favorites</a></li>
+        <li class="profile"><a href="#"><img src="/static/img/avatar.png" alt=""></a></li>
+      </ul>
+    </div><!--/.navbar-collapse -->
+  </section>
+  <!-- /.header -->
+  <div class="bg">
+    <div class="container">
+      <header class="heading">
+        <h1 class="wow fadeInUp">West Coast Itineraries</h1>
+        <div class="info wow fadeInUp" data-wow-delay="0.5s">
+          <div class="item">
+            <strong>6</strong>
+            <span>ITINERARIES</span>
+          </div>
+          <!-- /.item -->
+          <div class="item">
+            <strong>15</strong>
+            <span>DAYS</span>
+          </div>
+          <!-- /.item -->
+          <div class="item">
+            <strong>23</strong>
+            <span>ACTIVITIES</span>
+          </div>
+          <!-- /.item -->
+          <div class="item">
+            <strong>8</strong>
+            <span>CITIES</span>
+          </div>
+          <!-- /.item -->
+        </div>
+        <!-- /.info -->
+      </header>
+      <!-- /.heading -->
+      <section class="features">
+        <ul>
+          <li><a href="#tab1">Adventure</a></li>
+          <li><a href="#tab2">Relax</a></li>
+          <li><a href="#tab3">Family</a></li>
+          <li><a href="#tab0">Romantic</a></li>
+          <li><a href="#tab0">Discovery</a></li>
+          <li><a href="#tab0">Luxury</a></li>
+        </ul>
+      </section>
+      <!-- /.features -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <div class="container">
+    <div class="tabs">
+      <div class="tab" id="tab0">
+        <div class="row">
+          <div class="col-sm-3">
+            <nav class="nav-box">
+              <h2>Default Itinerary</h2>
+              <ul>
+                <li>
+                  <a href="#tab0-1" data-scroll-nav="001">
+                    <strong>1</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#tab0-2" data-scroll-nav="002">
+                    <strong>2</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.nav-box -->
+          </div>
+          <!-- /.col-sm-3 -->
+          <div class="col-sm-9">
+            <article class="content-box">
+              <div class="map">
+                <img src="/static/img/map_relax.png" alt="">
+              </div>
+              <!-- /.map -->
+              <div class="detail">
+                <div class="icon">
+                  <img src="/static/img/icons/icon_relax.png" alt="">
+                </div>
+                <!-- /.icon -->
+                <div class="text">
+                  <h2><strong>Default</strong> Itinerary</h2>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                </div>
+                <!-- /.text -->
+              </div>
+              <!-- /.detail -->
+            </article>
+            <!-- /.content-box -->
+            <section class="itinerary">
+              <article class="day" id="tab0-1" data-scroll-index="001">
+                <div class="day-no">1</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab0-2" data-scroll-index="002">
+                <div class="day-no">2</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+            </section>
+            <!-- /.itinerary -->
+          </div>
+          <!-- /.col-sm-9 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tab -->
+      <div class="tab" id="tab1">
+        <div class="row">
+          <div class="col-sm-3">
+            <nav class="nav-box">
+              <h2>Adventure Itinerary</h2>
+              <ul>
+                <li>
+                  <a href="#tab2-1" data-scroll-nav="201">
+                    <strong>1</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#tab2-2" data-scroll-nav="202">
+                    <strong>2</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#tab2-3" data-scroll-nav="203">
+                    <strong>3</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#tab2-4" data-scroll-nav="204">
+                    <strong>4</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#tab2-5" data-scroll-nav="205">
+                    <strong>5</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.nav-box -->
+          </div>
+          <!-- /.col-sm-3 -->
+          <div class="col-sm-9">
+            <article class="content-box">
+              <div class="map">
+                <img src="/static/img/map_adventure.png" alt="">
+              </div>
+              <!-- /.map -->
+              <div class="detail">
+                <div class="icon">
+                  <img src="/static/img/icons/icon_adventure.png" alt="">
+                </div>
+                <!-- /.icon -->
+                <div class="text">
+                  <h2><strong>Adventure</strong> Itinerary</h2>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                </div>
+                <!-- /.text -->
+              </div>
+              <!-- /.detail -->
+            </article>
+            <!-- /.content-box -->
+            <section class="itinerary">
+              <article class="day" id="tab2-1" data-scroll-index="201">
+                <div class="day-no">1</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab2-2" data-scroll-index="202">
+                <div class="day-no">2</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab2-3" data-scroll-index="203">
+                <div class="day-no">3</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab2-4" data-scroll-index="204">
+                <div class="day-no">4</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab2-5" data-scroll-index="205">
+                <div class="day-no">5</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+            </section>
+            <!-- /.itinerary -->
+          </div>
+          <!-- /.col-sm-9 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tab -->
+      <div class="tab" id="tab2">
+        <div class="row">
+          <div class="col-sm-3">
+            <nav class="nav-box">
+              <h2>Relax Itinerary</h2>
+              <ul>
+                <li>
+                  <a href="#tab2-1" data-scroll-nav="201">
+                    <strong>1</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#tab2-2" data-scroll-nav="202">
+                    <strong>2</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#tab2-3" data-scroll-nav="203">
+                    <strong>3</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#tab2-4" data-scroll-nav="204">
+                    <strong>4</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#tab2-5" data-scroll-nav="205">
+                    <strong>5</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.nav-box -->
+          </div>
+          <!-- /.col-sm-3 -->
+          <div class="col-sm-9">
+            <article class="content-box">
+              <div class="map">
+                <img src="/static/img/map_relax.png" alt="">
+              </div>
+              <!-- /.map -->
+              <div class="detail">
+                <div class="icon">
+                  <img src="/static/img/icons/icon_relax.png" alt="">
+                </div>
+                <!-- /.icon -->
+                <div class="text">
+                  <h2><strong>Relax</strong> Itinerary</h2>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                </div>
+                <!-- /.text -->
+              </div>
+              <!-- /.detail -->
+            </article>
+            <!-- /.content-box -->
+            <section class="itinerary">
+              <article class="day" id="tab2-1" data-scroll-index="201">
+                <div class="day-no">1</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab2-2" data-scroll-index="202">
+                <div class="day-no">2</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab2-3" data-scroll-index="203">
+                <div class="day-no">3</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab2-4" data-scroll-index="204">
+                <div class="day-no">4</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab2-5" data-scroll-index="205">
+                <div class="day-no">5</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+            </section>
+            <!-- /.itinerary -->
+          </div>
+          <!-- /.col-sm-9 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tab -->
+      <div class="tab" id="tab3">
+        <div class="row">
+          <div class="col-sm-3">
+            <nav class="nav-box">
+              <h2>Family Itinerary</h2>
+              <ul>
+                <li>
+                  <a href="#tab3-1" data-scroll-nav="301">
+                    <strong>1</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#tab3-2" data-scroll-nav="302">
+                    <strong>2</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#tab3-3" data-scroll-nav="303">
+                    <strong>3</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#tab3-4" data-scroll-nav="304">
+                    <strong>4</strong>
+                    <span>
+                      San Francisco<br>
+                      <span class="small">2 Days - 3 Activities</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- /.nav-box -->
+          </div>
+          <!-- /.col-sm-3 -->
+          <div class="col-sm-9">
+            <article class="content-box">
+              <div class="map">
+                <img src="/static/img/map_family.png" alt="">
+              </div>
+              <!-- /.map -->
+              <div class="detail">
+                <div class="icon">
+                  <img src="/static/img/icons/icon_family.png" alt="">
+                </div>
+                <!-- /.icon -->
+                <div class="text">
+                  <h2><strong>Family</strong> Itinerary</h2>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
+                <!-- /.text -->
+              </div>
+              <!-- /.detail -->
+            </article>
+            <!-- /.content-box -->
+            <section class="itinerary">
+              <article class="day" id="tab3-1" data-scroll-index="301">
+                <div class="day-no">1</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab3-2" data-scroll-index="302">
+                <div class="day-no">2</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab3-3" data-scroll-index="303">
+                <div class="day-no">3</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+              <article class="day" id="tab3-4" data-scroll-index="304">
+                <div class="day-no">4</div>
+                <div class="text-box">
+                  <header style="background-image: url(/static/img/san_francisco.png);">
+                    <h3>San Francisco</h3>
+                    <span class="days">
+                      <strong>2</strong>
+                      days
+                    </span>
+                  </header>
+                  <div class="content">
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu</p>
+                    <h4>Recommended Activities</h4>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                      <div class="col-sm-6">
+                        <dl class="dl-horizontal">
+                          <dt>08:00 AM</dt>
+                          <dd>Visit of moma,</dd>
+                          <dt>09:00 AM</dt>
+                          <dd>diner at Super Duper,</dd>
+                          <dt>01:00 PM</dt>
+                          <dd>hiking at Baker Beach...</dd>
+                        </dl>
+                      </div>
+                      <!-- /.col-sm-6 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.content -->
+                </div>
+                <!-- /.text-box -->
+              </article>
+              <!-- /.day -->
+            </section>
+            <!-- /.itinerary -->
+          </div>
+          <!-- /.col-sm-9 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.tab -->
+    </div>
+    <!-- /.tabs -->
+  </div>
+  <!-- /.container -->
+  <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+        
+        <div class="social-media">
+          <a href="#"><img src="/static/img/fb.png" alt=""></a>
+          <a href="#"><img src="/static/img/twitter.png" alt=""></a>
+          <a href="#"><img src="/static/img/google.png" alt=""></a>
+        </div>
+
+        <div class="payment">
+          <a href="#"><img src="/static/img/paypal.png" class="paypal" alt=""></a>
+          <a href="#"><img src="/static/img/visa.png" class="visa" alt=""></a>
+          <a href="#"><img src="/static/img/mastercard.png" class="mastercard" alt=""></a>
+        </div>
+
+      </div>
+      <!-- /.footer-wrapper -->
+
+      <hr>
+
+      <p>© 2015 TripGo @ Developer Week 2015 Hackathon. All rights reserved.</p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="/static/js/scrollIt.min.js"></script>
+  <script>
+  navbox = $('.nav-box');
+  navbox_width = navbox.width();
+  navbox.css('width', navbox_width+10+'px');
+  navbox.affix({
+    offset: {
+      top: $('.bg').height() + 60
+    }
+  });
+  $.scrollIt();
+
+  $('.nav-box a').click(function(e){
+    e.preventDefault();
+    elementID = $(this).attr('href');
+    $('html,body').animate({
+      scrollTop: $(elementID).offset().top
+    }, 500);
+  });
+
+  function my_tabs(selector, navSelector){
+    wrapper = $(selector);
+    nav = $(navSelector+' li');
+    tabs = $(selector + ' .tab');
+    function init(){
+      tabs.hide();
+      $(selector + ' .tab:first-child').show();
+    }
+    init();
+    nav.click(function(e){
+      e.preventDefault();
+      tabID = $(this).find('a').attr('href');
+      height = $(selector).height();
+      nav.removeClass('active');
+      $(this).addClass('active');
+      $(selector).css('height', height);
+      tabs.fadeOut(0);
+      $(tabID).fadeIn(500);
+      $(selector).css('height', 'auto');
+    });
+  }
+  my_tabs('.tabs','.features');
+  new WOW().init();
+  </script>
+</body>
+</html>
