@@ -133,11 +133,20 @@ input[type=date] {
 	margin-right: auto;
 	max-width: 960px;
 	margin-top: 20px;
+	text-align: center;
+}
+
+.trips a{
+	display: inline-block;
+}
+
+.trips>div{
+	margin-bottom: 20px;
 }
 
 .trips img {
 	width: 100%;
-	margin-bottom: 20px;
+	max-width: 300px;
 }
 
 .content-wrapper {
@@ -179,6 +188,11 @@ footer .logo {
 	text-align: center;
 }
 
+.footer-wrapper {
+	background: url(../img/logo_footer.png) center center no-repeat;
+	overflow: hidden;
+}
+
 .social-media {
 	float: left;
 	padding-right: 100px;
@@ -213,4 +227,19 @@ footer .paypal{
 
 footer .visa{
 	padding-top: 5px;
+}
+
+.navbar-toggle {
+	background-color: #fafaff;
+}
+
+.navbar-toggle .icon-bar {
+	border: 1px solid #b8b8b8;
+}
+
+@media (max-width: 700px) {
+.footer-wrapper {
+	background-position: center top;
+	padding-top: 50px;
+}
 }
