@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import mongoengine
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -36,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'itineraryapp',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -56,12 +58,22 @@ WSGI_APPLICATION = 'itinerary.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': '',
+    },
 }
+
+SESSION_ENGINE ='mongoengine.django.sessions'
+
+#mongodb://<dbuser>:<dbpassword>@ds033601.mongolab.com:33601/itinerary
+
+mongoengine.connect(
+    username='alavi201',
+    password='karachi1',
+    db='itinerary',
+    host='mongodb://itineraryadmin:accelerate@ds033601.mongolab.com:33601/itinerary')
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
