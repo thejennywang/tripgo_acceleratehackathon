@@ -4,14 +4,20 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
+
 .header {
 	background-color: #413e67;
 	background-image: url(../img/hero_image.png);	
 	background-size: cover;
 }
+
 .navbar {
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 	border-radius: 0;
+}
+
+.navbar-header {
+float: none;
 }
 
 #navbar {
@@ -117,10 +123,6 @@ body{
 	font-size: 1.4em;
 	color: #000;
 }
-
-input[type=date] {
-	font-size: 10px;
-	}
 
 .tagline .button {
 	background-color: #ff6f28;
