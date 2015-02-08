@@ -8,6 +8,4 @@ urlpatterns = patterns('',
     url(r'^mongonaut/', include('mongonaut.urls')),
     url(r'^admin/', include(admin.site.urls)),
     
-    
-    start = request.POST['start-date']
 )
