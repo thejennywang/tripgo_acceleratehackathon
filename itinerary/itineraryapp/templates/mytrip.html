@@ -98,7 +98,7 @@
               <ul>
                 {% for city in itinerary_list.0 %}
                 <li>
-                  <a href="#tab2-{{ forloop.counter }}" data-scroll-nav="20{{ forloop.counter }}">
+                  <a href="#tab1-{{ forloop.counter }}" data-scroll-nav="10{{ forloop.counter }}">
                     <strong>{{ forloop.counter }}</strong>
                     <span>
                       {{ city.title }}<br>
@@ -134,7 +134,7 @@
             <!-- /.content-box -->
             <section class="itinerary">
               {% for city in itinerary_list.0 %}
-                <article class="day" id="tab2-{{ forloop.counter }}" data-scroll-index="20{{ forloop.counter }}">
+                <article class="day" id="tab1-{{ forloop.counter }}" data-scroll-index="10{{ forloop.counter }}">
                   <div class="day-no">{{ forloop.counter }}</div>
                   <div class="text-box">
                     <header style="background-image: url(/static/img/cities/{{ city.title|slugify }}.png);">
