@@ -1,18 +1,17 @@
-from django.db import models
+from mongoengine import *
 
 # Create your models here.
-class City(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField()
+class City(Document):
+    name = StringField(max_length=100)
+    description = StringField()
     #pub_date = models.DateTimeField('date published')
     
     def __str__(self):
         return self.name
     
-class ThingsToDo(models.Model):
-    city = models.ForeignKey(City)
-    name = models.CharField(max_length=100)
-    description = models.TextField()
+class ThingsToDo():
+    city = ReferenceField(City)
+    name = StringField(max_length=100)
     
     def __str__(self):
         return self.name
