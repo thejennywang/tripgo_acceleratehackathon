@@ -550,7 +550,7 @@ footer .visa {
 /*-- ITINERARY --*/
 .itinerary {
   position: relative;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
 }
 .itinerary:before {
   position: absolute;
