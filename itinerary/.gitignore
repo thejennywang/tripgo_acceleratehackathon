@@ -1,5 +1,6 @@
 db.sqlite3
 itinerary/__pycache__/
+itinerary/migrations/__pycache__/
 itineraryapp/__pycache__/
 .DS_Store
 
