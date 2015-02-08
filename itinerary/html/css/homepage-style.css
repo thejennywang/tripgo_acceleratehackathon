@@ -27,6 +27,7 @@ body{
 	float: left;
 	padding: 0;
 	list-style-type: none;
+	font-size: 1.2em;
 }
 
 #navbar a {
@@ -71,8 +72,12 @@ body{
 	font-weight: 300;
 }
 
+.tagline h1{
+	font-size: 3.2em;
+}
+
 .tagline h2{
-	font-size: 20px;
+	font-size: 1.8em;
 }
 
 .tagline header {
@@ -108,7 +113,7 @@ body{
 	border: 0;
 	border-right: 1px solid #ccc;
 	padding: 10px;
-	font-size: 18px;
+	font-size: 1.4em;
 }
 
 .tagline .button {
@@ -119,7 +124,7 @@ body{
 .trips {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 900px;
+	max-width: 960px;
 	margin-top: 20px;
 }
 
@@ -128,10 +133,14 @@ body{
 	margin-bottom: 20px;
 }
 
+.content-wrapper {
+	padding-bottom: 30px;
+}
+
 .content-wrapper header {
 	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .content-wrapper h1,
@@ -141,11 +150,12 @@ body{
 
 .content-wrapper h1 {
 	color: #2b3a42;
-	font-size: 30px;
+	font-size: 3em;
 }
 
 .content-wrapper p {
 	color: #a9b8c1;
+	font-size: 1.4em;
 }
 
 footer {
@@ -154,16 +164,12 @@ footer {
 }
 
 footer .container {
-	max-width: 900px;
+	max-width: 960px;
 	padding-top: 30px;
 }
 
 footer .logo {
 	text-align: center;
-}
-
-footer .logo img {
-	width: 100px;
 }
 
 .social-media {
@@ -172,7 +178,6 @@ footer .logo img {
 }
 
 .social-media img {
-	width: 28px;
 	margin-right: 5px;
 }
 
