@@ -4,6 +4,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 }
+
 .header {
 	background-color: #413e67;
 	background-image: url(../img/hero_image.png);	
@@ -12,6 +13,10 @@ body{
 .navbar {
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 	border-radius: 0;
+}
+
+.navbar-header {
+float: none;
 }
 
 #navbar {
@@ -115,11 +120,13 @@ body{
 	border-right: 1px solid #ccc;
 	padding: 10px;
 	font-size: 1.4em;
+	color: #000;
 }
 
 .tagline .button {
 	background-color: #ff6f28;
 	border-color: #ff6f28;
+	color: #fff;
 }
 
 .trips {
@@ -127,11 +134,21 @@ body{
 	margin-right: auto;
 	max-width: 960px;
 	margin-top: 20px;
+	text-align: center;
+}
+
+.trips a{
+	display: inline-block;
+}
+
+.trips>div{
+	margin-bottom: 20px;
 }
 
 .trips img {
 	width: 100%;
-	margin-bottom: 20px;
+
+	max-width: 300px;
 }
 
 .content-wrapper {
@@ -173,6 +190,11 @@ footer .logo {
 	text-align: center;
 }
 
+.footer-wrapper {
+	background: url(../img/logo_footer.png) center center no-repeat;
+	overflow: hidden;
+}
+
 .social-media {
 	float: left;
 	padding-right: 100px;
@@ -207,4 +229,18 @@ footer .paypal{
 
 footer .visa{
 	padding-top: 5px;
+}
+
+.navbar-toggle {
+	background-color: #fafaff;
+}
+
+.navbar-toggle .icon-bar {
+	border: 1px solid #b8b8b8;
+}
+
+@media (max-width: 700px) {
+.footer-wrapper {
+	background-position: center top;
+	padding-top: 50px;
 }
